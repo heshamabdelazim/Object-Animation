@@ -1,0 +1,114 @@
+body{
+    background-color: #677489;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 354px;
+    height: 582px;
+    /* background-color: rgb(204, 127, 127); */
+    margin: 30px auto;
+    position: relative;
+
+}
+
+.flex-row{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 354px;
+   
+   
+}
+
+.flex-row div{
+    background-color: white;
+    width: 118px;
+    height: 100px;
+    /* margin-left:10px ; */
+}
+
+/* new flex */
+
+.flex-column{
+    display: flex;
+    flex-flow: column nowrap;
+ 
+}
+
+.flex-column div{
+    background-color: white;
+    width: 118px;
+    height: 71px;
+}
+
+/* new flex */
+
+
+
+
+/* OBJECT */
+
+.object{
+    width: 50px;
+    height: 50px;
+    background-color: darksalmon;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    animation:animation 6s infinite ;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes animation{
+    0%{
+        transform:translate(0);
+    }
+
+    11%{
+        transform: translateX(-245px) ;
+    }
+
+    22%{
+        transform:translateX(-245px) translateY(242px);
+    }
+
+    33%{
+        transform: translateY(242px) translateX(0px);
+
+    }
+
+    44%{
+        transform: translateX(-245px) translateY(242px) ;
+    }
+
+    55%{
+        transform: translateX(-245px) translateY(484px);
+    }
+    66%{
+        transform: translateY(484px) translateX(0) ;
+    }
+    77%{
+        transform: translateY(484px) translateX(-245px);
+    }
+    88%{
+        transform: translateX(-245px) translateY(0)
+    }
+    100%{}
+
+
+
+
+
+
+
+
+
+
+
+    
+}
